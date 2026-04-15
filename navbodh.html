@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbodh Organic & Healthy Products</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./navbodh.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">🌿</div>
+    <div class="nav-logo-text">
+      <strong>Navbodh</strong>
+      <span>Organic & Healthy</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#mangoes">Mangoes</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why-us">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Order Now</button>
+  <button class="hamburger" id="ham" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#mangoes" onclick="toggleMenu()">🥭 Mangoes</a>
+  <a href="#products" onclick="toggleMenu()">🛒 Products</a>
+  <a href="#why-us" onclick="toggleMenu()">✅ Why Us</a>
+  <a href="#contact" onclick="toggleMenu()">📞 Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-leaves">
+    <div class="leaf" style="width:200px;height:200px;top:10%;left:-40px;animation-delay:0s;"></div>
+    <div class="leaf" style="width:120px;height:120px;top:60%;right:5%;animation-delay:2s;"></div>
+    <div class="leaf" style="width:80px;height:80px;top:30%;right:20%;animation-delay:4s;"></div>
+    <div class="leaf" style="width:150px;height:150px;bottom:10%;left:10%;animation-delay:1s;"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">🌿 100% Organic • Raipur, CG</div>
+      <h1>Nature's Finest,<br><em>Delivered Fresh</em><br>to Your Door</h1>
+      <p class="hero-sub">Premium organic mangoes, pure ghee, fresh milk, jackfruit, and more — straight from nature's heart to your family's table.</p>
+      <div class="hero-actions">
+        <a href="#mangoes" class="btn-primary">Explore Mangoes 🥭</a>
+        <a href="#products" class="btn-secondary">All Products</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><div class="stat-num">3.8★</div><div class="stat-label">Google Rating</div></div>
+        <div class="stat"><div class="stat-num">7+</div><div class="stat-label">Mango Varieties</div></div>
+        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Organic</div></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-fruit-ring">
+        <span class="hero-center-emoji">🥭</span>
+        <div class="orbit-fruit" style="--start:0deg;--r:155px;--dur:12s;">🍈</div>
+        <div class="orbit-fruit" style="--start:72deg;--r:155px;--dur:12s;">🥛</div>
+        <div class="orbit-fruit" style="--start:144deg;--r:155px;--dur:12s;">🍋</div>
+        <div class="orbit-fruit" style="--start:216deg;--r:155px;--dur:12s;">🌰</div>
+        <div class="orbit-fruit" style="--start:288deg;--r:155px;--dur:12s;">🍈</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marquee">
+    <div class="marquee-item"><span>🥭 Dasheri Mango</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Banganapalli</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Langda</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Shafeda</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Tota Pari</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Amrapali</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Mallika</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🧈 Pure Ghee</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥛 Fresh Milk</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🍈 Jackfruit</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🍋 Lemon</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🌰 Kaju</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>⭐ Star Fruit</span><span class="marquee-dot"></span></div>
+    <!-- duplicate for seamless loop -->
+    <div class="marquee-item"><span>🥭 Dasheri Mango</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Banganapalli</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Langda</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Shafeda</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Tota Pari</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Amrapali</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥭 Mallika</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🧈 Pure Ghee</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🥛 Fresh Milk</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🍈 Jackfruit</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🍋 Lemon</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>🌰 Kaju</span><span class="marquee-dot"></span></div>
+    <div class="marquee-item"><span>⭐ Star Fruit</span><span class="marquee-dot"></span></div>
+  </div>
+</div>
+
+<!-- MANGOES -->
+<section class="mango-section" id="mangoes">
+  <div class="container">
+    <div class="mango-header reveal">
+      <span class="section-tag">🥭 Star Collection</span>
+      <h2 class="section-title">Our <em>Mango</em> Varieties</h2>
+      <p class="section-sub">Hand-picked at peak ripeness from the finest orchards across India</p>
+    </div>
+    <div class="mango-grid">
+      <div class="mango-card reveal">
+        <span class="mango-emoji">🥭</span>
+        <div class="mango-name">Dasheri</div>
+        <div class="mango-origin">Uttar Pradesh</div>
+        <span class="mango-tag">Sweet & Fibrous</span>
+      </div>
+      <div class="mango-card reveal">
+        <span class="mango-emoji">🥭</span>
+        <div class="mango-name">Banganapalli</div>
+        <div class="mango-origin">Andhra Pradesh</div>
+        <span class="mango-tag">Large & Juicy</span>
+      </div>
+      <div class="mango-card reveal">
+        <span class="mango-emoji">🥭</span>
+        <div class="mango-name">Langda</div>
+        <div class="mango-origin">Varanasi</div>
+        <span class="mango-tag">Turpentine Free</span>
+      </div>
+      <div class="mango-card reveal">
+        <span class="mango-emoji">🥭</span>
+        <div class="mango-name">Shafeda</div>
+        <div class="mango-origin">Maharashtra</div>
+        <span class="mango-tag">Mild & Fragrant</span>
+      </div>
+      <div class="mango-card reveal">
+        <span class="mango-emoji">🥭</span>
+        <div class="mango-name">Tota Pari</div>
+        <div class="mango-origin">Andhra Pradesh</div>
+        <span class="mango-tag">Unique Beak Shape</span>
+      </div>
+      <div class="mango-card reveal">
+        <span class="mango-emoji">🥭</span>
+        <div class="mango-name">Amrapali</div>
+        <div class="mango-origin">All India</div>
+        <span class="mango-tag">Regular Bearer</span>
+      </div>
+      <div class="mango-card reveal">
+        <span class="mango-emoji">🥭</span>
+        <div class="mango-name">Mallika</div>
+        <div class="mango-origin">Hybrid Variety</div>
+        <span class="mango-tag">Neelam × Dasheri</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OTHER PRODUCTS -->
+<section class="products-section" id="products">
+  <div class="container">
+    <div class="reveal" style="text-align:center;margin-bottom:0">
+      <span class="section-tag">🌾 All Natural</span>
+      <h2 class="section-title">More <em>Organic</em> Goodness</h2>
+      <p class="section-sub" style="margin:0 auto">Beyond mangoes — pure, farm-fresh products for every kitchen</p>
+    </div>
+    <div class="products-grid">
+      <div class="product-card reveal">
+        <div class="product-img" style="background:linear-gradient(135deg,#fff8e1,#ffd54f40);">🧈</div>
+        <div class="product-body">
+          <div class="product-name">Pure Desi Ghee</div>
+          <div class="product-desc">Hand-churned from fresh cow's milk using traditional bilona method. Rich aroma, golden colour, A2 quality.</div>
+          <div class="product-footer">
+            <span class="product-badge">A2 Quality</span>
+            <button class="product-btn" onclick="orderNow('Ghee')">Enquire</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img" style="background:linear-gradient(135deg,#e3f2fd,#90caf940);">🥛</div>
+        <div class="product-body">
+          <div class="product-name">Fresh Milk</div>
+          <div class="product-desc">Pure, unadulterated farm-fresh milk delivered to you. No preservatives, no additives — just natural goodness.</div>
+          <div class="product-footer">
+            <span class="product-badge">Farm Fresh</span>
+            <button class="product-btn" onclick="orderNow('Milk')">Enquire</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img" style="background:linear-gradient(135deg,#f1f8e9,#a5d6a740);">🍈</div>
+        <div class="product-body">
+          <div class="product-name">Jackfruit</div>
+          <div class="product-desc">Organic jackfruit — nature's meat alternative. Tender, flavourful, and packed with nutrients. Available whole or sliced.</div>
+          <div class="product-footer">
+            <span class="product-badge">Seasonal</span>
+            <button class="product-btn" onclick="orderNow('Jackfruit')">Enquire</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img" style="background:linear-gradient(135deg,#fffde7,#fff59d40);">🍋</div>
+        <div class="product-body">
+          <div class="product-name">Fresh Lemon</div>
+          <div class="product-desc">Tangy, juicy, organic lemons packed with Vitamin C. Perfect for cooking, beverages and health rituals.</div>
+          <div class="product-footer">
+            <span class="product-badge">Vitamin C</span>
+            <button class="product-btn" onclick="orderNow('Lemon')">Enquire</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img" style="background:linear-gradient(135deg,#fce4ec,#f48fb140);">🌰</div>
+        <div class="product-body">
+          <div class="product-name">Kaju (Cashews)</div>
+          <div class="product-desc">Premium quality whole cashews. Creamy, buttery, and rich in healthy fats. Great as a snack or in cooking.</div>
+          <div class="product-footer">
+            <span class="product-badge">Premium Grade</span>
+            <button class="product-btn" onclick="orderNow('Kaju')">Enquire</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal">
+        <div class="product-img" style="background:linear-gradient(135deg,#e8f5e9,#66bb6a40);">⭐</div>
+        <div class="product-body">
+          <div class="product-name">Star Fruit</div>
+          <div class="product-desc">Exotic, tropical star fruit (carambola) — visually stunning, tangy-sweet taste, loaded with antioxidants.</div>
+          <div class="product-footer">
+            <span class="product-badge">Antioxidant Rich</span>
+            <button class="product-btn" onclick="orderNow('Star Fruit')">Enquire</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-section" id="why-us">
+  <div class="container">
+    <div class="reveal" style="text-align:center">
+      <span class="section-tag" style="background:rgba(255,255,255,.15);color:var(--amber)">Our Promise</span>
+      <h2 class="section-title">Why Choose <em>Navbodh?</em></h2>
+      <p class="section-sub" style="margin:0 auto">We're not just a store — we're your trusted organic partner</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card reveal">
+        <div class="why-icon">🌿</div>
+        <div class="why-title">100% Organic</div>
+        <div class="why-desc">No pesticides, no chemicals. Every product is grown and sourced naturally to protect your health.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">🚜</div>
+        <div class="why-title">Direct from Farm</div>
+        <div class="why-desc">We source directly from trusted farmers across India, ensuring freshness and fair farmer prices.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">⚡</div>
+        <div class="why-title">Fresh Delivery</div>
+        <div class="why-desc">Products reach you at peak freshness. Quick delivery across Raipur and surrounding areas.</div>
+      </div>
+      <div class="why-card reveal">
+        <div class="why-icon">💚</div>
+        <div class="why-title">Trusted Quality</div>
+        <div class="why-desc">3.8★ Google rating with hundreds of happy families. Quality you can taste in every bite.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <span class="section-tag">❤️ Customers Love Us</span>
+      <h2 class="section-title">What Our <em>Customers</em> Say</h2>
+      <div class="stars" style="margin-top:.5rem">★★★★☆</div>
+      <p style="color:var(--text-muted);font-size:.85rem;margin-top:.3rem">3.8 rating on Google Reviews</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Best mangoes I've ever tasted in Raipur! The Dasheri variety is absolutely divine. Fresh, sweet, and zero chemicals — you can actually taste the difference."</p>
+        <div class="review-author">— Priya Sharma, Samta Colony</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Their desi ghee is absolutely pure and aromatic — exactly the way my dadi used to make it. I've become a regular customer for ghee and milk. Highly recommended!"</p>
+        <div class="review-author">— Rahul Verma, Raipur</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★☆</div>
+        <p class="review-text">"Love the variety of mangoes here — from Langda to Amrapali, everything is fresh and naturally ripened. Great place for organic products in Raipur."</p>
+        <div class="review-author">— Anita Tiwari, Civil Lines</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info reveal">
+        <span class="section-tag">📍 Find Us</span>
+        <h2>Visit or <em style="font-style:italic;color:var(--green)">Call Us</em> Today</h2>
+        <div style="height:1rem"></div>
+        <div class="contact-detail">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Address</div>
+            <div class="contact-value">Samta Colony Main Rd, Samta Colony<br>Raipur, Chhattisgarh 492001</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">📞</div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value"><a href="tel:07714040459" style="color:inherit;text-decoration:none">077140 40459</a></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <div class="contact-label">Hours</div>
+            <div class="contact-value">Open daily until 8:30 PM</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-icon">🏬</div>
+          <div>
+            <div class="contact-label">Located In</div>
+            <div class="contact-value">Samta Shopping Arcade</div>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem">
+          <a href="https://maps.google.com/?q=Navbodh+Organic+Raipur" target="_blank" class="btn-primary" style="display:inline-block">📍 Get Directions</a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--brown);margin-bottom:1.2rem">Send an Enquiry</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" placeholder="Your number">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Product Interested In</label>
+          <input type="text" placeholder="e.g. Dasheri Mango, Ghee..." id="productInput">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us what you need..."></textarea>
+        </div>
+        <button class="form-submit" onclick="submitForm()">Send Enquiry 🌿</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">🌿 Navbodh Organic</div>
+  <div class="footer-sub">Samta Colony, Raipur, Chhattisgarh · Open until 8:30 PM</div>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#mangoes">Mangoes</a>
+    <a href="#products">Products</a>
+    <a href="#why-us">Why Us</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-copy">© 2026 Navbodh Organic & Healthy Products. Made with 💚 in Raipur.</div>
+  <div class="footer-copy"><a href="https://namanjainottportfolio.netlify.app/" style="text-decoration: none; color: white;">Develop By Naman Jain</a></div>
+
+</footer>
+
+<!-- Floating CTA -->
+<a href="tel:07714040459" class="float-cta">📞 Call Us Now</a>
+<script src="./navbodh.js"></script>
+
+</body>
+</html>
